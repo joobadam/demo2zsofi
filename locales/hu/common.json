@@ -11,7 +11,8 @@
     "scrollDown": "Görgetés lefelé",
     "scrollUp": "Görgetés felfelé",
     "content": "Tartalom",
-    "contentDescription": "Itt jöhet a valódi tartalom"
+    "contentDescription": "Itt jöhet a valódi tartalom",
+    "customSolutions": "Személyre szabott megoldások"
   },
   "common": {
     "loading": "Betöltés...",
@@ -75,7 +76,8 @@
     "intellectualProperty": "Szellemi tulajdon",
     "intellectualPropertyText": "A weboldal tartalma, beleértve a szövegeket, képeket, logókat és egyéb anyagokat, az ügyvédi iroda szellemi tulajdonát képezi. A tartalom felhasználása kizárólag előzetes írásbeli engedéllyel lehetséges.",
     "contact": "Kapcsolat",
-    "contactText": "Jogi kérdéseivel kapcsolatban kérjük, vegye fel velünk a kapcsolatot a fenti elérhetőségeken, vagy használja ki kapcsolati űrlapunkat."
+    "contactText": "Jogi kérdéseivel kapcsolatban kérjük, vegye fel velünk a kapcsolatot a fenti elérhetőségeken, vagy használja ki kapcsolati űrlapunkat.",
+    "lastUpdated": "Utolsó frissítés"
   },
   "impressum": {
     "title": "Impresszum",
@@ -115,7 +117,8 @@
     "dataProtection": "Adatvédelem",
     "dataProtectionText": "Az ügyvédi iroda adatkezelési tevékenységét a GDPR (2016/679 EU Rendelet) és a magyar adatvédelmi jogszabályok szabályozzák. Részletes adatvédelmi tájékoztatónkat itt találja.",
     "contact": "Kapcsolat",
-    "contactText": "Ügyvédi szolgáltatásaink igénybevételéhez kérjük, vegye fel velünk a kapcsolatot a fenti elérhetőségeken, vagy használja ki kapcsolati űrlapunkat."
+    "contactText": "Ügyvédi szolgáltatásaink igénybevételéhez kérjük, vegye fel velünk a kapcsolatot a fenti elérhetőségeken, vagy használja ki kapcsolati űrlapunkat.",
+    "lastUpdated": "Utolsó frissítés"
   },
   "notFound": {
     "title": "Az oldal nem található",
@@ -145,9 +148,17 @@
     "subtitle": "Ügyvéd, közlekedési szakjogász",
     "servicesButton": "Szolgáltatások",
     "contactButton": "Kapcsolat",
+    "contact": "Kapcsolatfelvétel",
+    "expertLegalAdvice": "Szakértő ügyvédi tanácsadás",
     "helpTitle": "Segítségre van szüksége?",
     "helpDescription": "Forduljon bizalommal hozzám, ha szakszerű, hatékony és precíz jogi segítségnyújtásra van szüksége a büntetőjog, cégeljárás, ingatlan adásvétel/ajándékozás, valamint a családjog területén.",
     "helpContactButton": "Kapcsolat",
+    "helpContactButtonAria": "Kapcsolatfelvétel",
+    "professional": "Professzionális",
+    "trustedAttorney": "Megbízható ügyvéd",
+    "dataProtection": "Adatvédelem",
+    "expertServices": "Szakértői szolgáltatások",
+    "details": "Részletek",
     "servicesTitle": "Személyre szabott jogi szolgáltatások az Ön igényeire szabva",
     "servicesDescription": "Ügyvédi praxisomban széles körű tapasztalattal nyújtok professzionális jogi segítséget a büntetőjog, cégeljárás, ingatlanjog, családjog és nemzetközi jog területeken. Minden ügyet személyre szabott figyelemmel és elhivatottsággal kezelek.",
     "criminalDefense": "Büntetőjogi védelem",
@@ -162,7 +173,8 @@
     "readMore": "Tovább",
     "ctaTitle": "Vegye fel velem a kapcsolatot bizalommal",
     "ctaDescription": "Kérdése van vagy jogi segítségre van szüksége? Forduljon hozzám bizalommal e-mailben vagy telefonon – hamarosan válaszolok.",
-    "ctaContactButton": "Kapcsolat"
+    "ctaContactButton": "Kapcsolat",
+    "freeConsultation": "Ingyenes konzultáció"
   },
   "about": {
     "title": "Rólam",
@@ -170,6 +182,11 @@
     "description2": "Szakmai pályafutásom során elsősorban büntetőjogi ügyekkel foglalkozom, különös tekintettel a közlekedési bűncselekményekre. Célom, hogy minden ügyfelem számára a lehető legjobb jogi képviseletet biztosítsam.",
     "learnMoreButton": "Tudjon meg többet",
     "contactButton": "Kapcsolat",
+    "learnMoreButtonAria": "További információ a szolgáltatásokról",
+    "contactButtonAria": "Kapcsolatfelvétel",
+    "previousTestimonial": "Előző vélemény",
+    "nextTestimonial": "Következő vélemény",
+    "goToTestimonial": "Ugrás a {number}. véleményhez",
     "valuesTitle": "Szakmaiság, empátia és elkötelezettség az Ön érdekeiért",
     "clientCenteredTitle": "Ügyfélközpontúság minden élethelyzetben",
     "clientCenteredText": "Az Ön jogi ügye nem csak egy eset – számomra egy emberi történet. Munkám során mindig az ügyfél szempontjait és érdekeit helyezem előtérbe.",
@@ -183,6 +200,7 @@
     "testimonialsSubtitle": "Az ügyfeleink véleménye a munkám minőségéről",
     "testimonial1": "Dr. Szomor Zsófia Anna professzionális és empatikus hozzáállása lenyűgözött. Büntetőjogi ügyemben kiváló képviseletet kaptam, minden lépést világosan elmagyarázott.",
     "testimonial2": "Közlekedési baleset után Dr. Szomor segítségével sikerült megfelelő kártérítést kapnom. Szakértelme és kitartása példaértékű volt.",
+    "testimonial3": "A büntetőeljárás során Dr. Szomor Zsófia Anna LL.M. professzionális és emberséges hozzáállása lenyűgözött. A büntetőeljárás során kiváló képviseletet kaptam, minden lépést világosan elmagyarázott.",
     "client": "Ügyfél",
     "faqTitle": "Gyakran Ismételt Kérdések",
     "faqSubtitle": "Találja meg a választ a leggyakrabban felmerülő kérdésekre jogi szolgáltatásainkkal és a konzultációk menetével kapcsolatban.",
@@ -202,6 +220,7 @@
   "services": {
     "title": "Szolgáltatásaim",
     "subtitle": "Komplex jogi szolgáltatások az Ön egyedi igényeire szabva.",
+    "professional": "Professzionális",
     "europeanCourtTitle": "Képviselet az Európai Emberi Jogi Bíróság előtt",
     "europeanCourtDescription1": "Az Emberi Jogok Európai Bírósága előtti eljárások különleges szakértelmet és tapasztalatot igényelnek. Dr. Szomor Zsófia Anna LL.M. vállalja Ügyfelei képviseletét ezen a nemzetközi fórumon is, biztosítva, hogy jogaik érvényesítése nemzetközi szinten is megtörténjen.",
     "europeanCourtDescription2": "A beadvány elkészítésétől a bírósági eljárás lefolytatásáig teljes körű támogatást nyújtok, legyen szó akár emberi jogi sérelmekről, akár magyar hatóságok döntéseinek felülvizsgálatáról.",
@@ -238,6 +257,8 @@
     "subtitle": "Szívesen állok rendelkezésére bármilyen jogi kérdés vagy konzultáció kapcsán. Vegye fel velem a kapcsolatot az alábbi elérhetőségek egyikén!",
     "contactTitle": "Kapcsolat Dr. Szomor Zsófiával",
     "contactSubtitle": "Ügyfélfogadás kizárólag előzetes időpont-egyeztetés alapján. Forduljon hozzám bizalommal bármilyen jogi kérdéssel!",
+    "appointmentRequired": "Előzetes időpont",
+    "professional": "Professzionális",
     "phoneNumber": "Telefonszám",
     "emailAddress": "Email cím",
     "callButton": "Hívás",
@@ -255,5 +276,37 @@
     "impressum": "Impresszum",
     "legalNotice": "Jogi nyilatkozat",
     "cookieSettings": "Cookie beállítások"
+  },
+  "privacyPolicy": {
+    "title": "Adatvédelmi tájékoztató és süti információk",
+    "cookiePolicy": "Süti szabályzat",
+    "cookiePolicyDescription": "Ez a weboldal sütiket használ a böngészési élmény javítása és személyre szabott tartalom nyújtása érdekében. Az alábbiakban részletes információt talál a használt sütik típusairól és azok kezeléséről.",
+    "whatAreCookies": "Mik a sütik?",
+    "whatAreCookiesDescription": "A sütik kis szöveges fájlok, amelyeket eszközén tárolunk, amikor weboldalunkat meglátogatja. Segítenek a weboldalnak emlékezni a látogatásával kapcsolatos információkra, például a preferált nyelvre és egyéb beállításokra, ami a következő látogatását könnyebbé és a weboldalt hasznosabbá teheti.",
+    "typesOfCookies": "Használt sütik típusai",
+    "necessaryCookies": "Szükséges sütik",
+    "necessaryCookiesDescription": "Ezek a sütik elengedhetetlenek a weboldal megfelelő működéséhez. Nem lehet őket kikapcsolni és a weboldal alapvető funkcionalitásához, biztonságához és hozzáférhetőségéhez szükségesek.",
+    "analyticsCookies": "Analitikai sütik",
+    "analyticsCookiesDescription": "Ezek a sütik segítenek megérteni, hogyan lépnek kapcsolatba a látogatók weboldalunkkal, információt gyűjtve és jelentve anonim módon. Ez segít fejleszteni weboldalunkat és szolgáltatásainkat.",
+    "marketingCookies": "Marketing sütik",
+    "marketingCookiesDescription": "Ezeket a sütiket a látogatók weboldalakon keresztüli követésére használjuk, hogy releváns és vonzó hirdetéseket jelenítsünk meg. Segítenek olyan tartalmat nyújtani, amely érdekes lehet Önnek.",
+    "preferenceCookies": "Preferencia sütik",
+    "preferenceCookiesDescription": "Ezek a sütik lehetővé teszik a weboldal számára, hogy emlékezzen a döntéseire és fokozott, személyesebb funkciókat nyújtson. Általunk vagy harmadik féltől származó szolgáltatók állíthatják be őket.",
+    "managingPreferences": "Süti beállítások kezelése",
+    "managingPreferencesDescription": "Süti beállításait bármikor kezelheti a \"Testreszabás\" gombra kattintva a süti hozzájárulási ablakban. Módosíthatja böngésző beállításait is a sütik elutasításához, bár ez befolyásolhatja weboldalunk funkcionalitását.",
+    "toChangePreferences": "Süti beállítások módosításához:",
+    "useCookieManager": "Használja süti kezelőnket",
+    "clearBrowserCookies": "Törölje böngésző sütijeit",
+    "adjustBrowserSettings": "Állítsa be böngészőjét",
+    "contactForAssistance": "Forduljon hozzánk segítségért",
+    "thirdPartyCookies": "Harmadik féltől származó sütik",
+    "thirdPartyCookiesDescription": "Weboldalunkon néhány süti olyan harmadik féltől származó szolgáltatások által van beállítva, amelyeket élményének javítása érdekében használunk. Ezek a szolgáltatások analitikai szolgáltatókat, közösségi média platformokat és hirdetési hálózatokat foglalhatnak magukba.",
+    "dataProtection": "Adatvédelem",
+    "dataProtectionDescription": "Elkötelezettek vagyunk az Ön magánéletének védelme és személyes adatainak biztonságának biztosítása iránt. A sütiken keresztül gyűjtött információk az adatvédelmi irányelveinknek és az érvényes adatvédelmi törvényeknek megfelelően kerülnek felhasználásra.",
+    "updatesToPolicy": "Szabályzat frissítések",
+    "updatesToPolicyDescription": "Süti szabályzatunkat időnként frissíthetjük, hogy tükrözze gyakorlatunk változásait vagy más működési, jogi vagy szabályozási okokból. Javasoljuk, hogy időnként tekintse át ezt a szabályzatot.",
+    "contactUs": "Kapcsolat",
+    "contactUsDescription": "Ha kérdése van a sütik használatával vagy ezzel az adatvédelmi tájékoztatóval kapcsolatban, kérjük, vegye fel velünk a kapcsolatot kapcsolati oldalunkon keresztül vagy írjon nekünk közvetlenül e-mailben.",
+    "lastUpdated": "Utolsó frissítés"
   }
 }

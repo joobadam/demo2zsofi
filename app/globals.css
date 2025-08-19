@@ -2,34 +2,34 @@
 
 @theme {
   /* Lawyer Website Design System - Fonts */
-  --font-sans: "Inter", system-ui, sans-serif;
-  --font-heading: "Lexend", system-ui, sans-serif;
-  --font-display: "Lexend", system-ui, sans-serif;
+  --font-sans: var(--font-lato), "Lato", system-ui, sans-serif;
+  --font-heading: var(--font-lato), "Lato", system-ui, sans-serif;
+  --font-display: var(--font-lato), "Lato", system-ui, sans-serif;
 
-  /* Lawyer Website - Primary Green Color Palette */
-  --color-primary: #004225;
-  --color-primary-dark: #002f1a;
-  --color-primary-light: #006b3f;
-  --color-primary-lighter: #4d9966;
+  /* Lawyer Website - Primary Deep Purple Color Palette */
+  --color-primary: #581C87;
+  --color-primary-dark: #4C1D95;
+  --color-primary-light: #7C3AED;
+  --color-primary-lighter: #A78BFA;
   --color-primary-foreground: #ffffff;
 
   /* Secondary Colors */
-  --color-secondary: #333333;
-  --color-secondary-light: #4d4d4d;
+  --color-secondary: #2D3748;
+  --color-secondary-light: #4A5568;
   --color-secondary-foreground: #ffffff;
 
   /* Neutral Colors */
   --color-background: #ffffff;
-  --color-foreground: #000000;
-  --color-muted: #f5f5f5;
-  --color-muted-foreground: #666666;
+  --color-foreground: #1A202C;
+  --color-muted: #F7FAFC;
+  --color-muted-foreground: #718096;
   --color-card: #ffffff;
-  --color-card-foreground: #000000;
+  --color-card-foreground: #1A202C;
   --color-popover: #ffffff;
-  --color-popover-foreground: #000000;
-  --color-border: #e0e0e0;
-  --color-input: #e0e0e0;
-  --color-ring: #004225;
+  --color-popover-foreground: #1A202C;
+  --color-border: #E2E8F0;
+  --color-input: #E2E8F0;
+  --color-ring: #581C87;
 
   /* Status Colors */
   --color-destructive: #dc2626;
@@ -331,5 +331,51 @@
 
   .focus-visible\:ring-ring:focus-visible {
     box-shadow: 0 0 0 1px var(--color-ring);
+  }
+
+  /* Gradient Button Styles */
+  .gradient-button {
+    position: relative;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 12px 32px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    overflow: hidden;
+  }
+
+  .gradient-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+  }
+
+  .gradient-button:hover::before {
+    left: 100%;
+  }
+
+  .gradient-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+  }
+
+  .gradient-button:active {
+    transform: translateY(0);
+  }
+
+  .gradient-button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
   }
 }

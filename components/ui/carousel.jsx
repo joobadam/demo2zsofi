@@ -95,6 +95,20 @@ function Carousel({
         data-slot="carousel"
         {...props}>
         {children}
+        <button
+          onClick={scrollPrev}
+          className="gradient-button absolute left-4 top-1/2 -translate-y-1/2 z-10"
+          aria-label="Previous image"
+        >
+          <ArrowLeft className="h-4 w-4" />
+        </button>
+        <button
+          onClick={scrollNext}
+          className="gradient-button absolute right-4 top-1/2 -translate-y-1/2 z-10"
+          aria-label="Next image"
+        >
+          <ArrowRight className="h-4 w-4" />
+        </button>
       </div>
     </CarouselContext.Provider>
   );

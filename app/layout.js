@@ -1,25 +1,29 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 import { LenisProvider } from "@/components/LenisProvider";
 import { LanguageProvider } from "@/hooks/useLanguage";
 import { Footer4 } from "./home/components/Footer4";
 import Navbar from "./home/components/Navbar";
 import CookieConsent from "@/components/CookieConsent";
+import { TwentyFirstToolbar } from "@/components/TwentyFirstToolbar";
+import { FlickeringGrid } from "@/components/ui/flickering-grid";
 
-// SEO-optimized metadata
+// SEO-optimized metadata (büntetőjog & közlekedési jog fókusz)
 export const metadata = {
-  title: "Dr. Szomor Zsófia Anna | Ügyvédi Iroda – Polgári jog, családjog, ingatlanjog Budapesten",
+  title:
+    "Dr. Szomor Zsófia Anna | Büntetőjog és Közlekedési jog – Ügyvédi Iroda Budapesten",
   description:
-    "Dr. Szomor Zsófia Anna ügyvédi irodája Budapesten. Személyre szabott jogi tanácsadás, polgári jog, családjog, ingatlanjog, peres és peren kívüli képviselet. Vegye fel velünk a kapcsolatot bizalommal!",
+    "Büntetőjogi és közlekedési jogi képviselet Budapesten: ittas vezetés, jogosítvány bevonás, közúti balesetek, büntetőeljárás, gyanúsított- és sértetti képviselet. Személyre szabott jogi tanácsadás és hatékony peres/peren kívüli képviselet.",
   keywords:
-    "ügyvéd, jogi tanácsadás, polgári jog, családjog, ingatlanjog, ügyvédi iroda, Budapest, Dr. Szomor Zsófia Anna, jogi képviselet, peres ügyek, szerződés, jogász",
+    "büntetőjog, közlekedési jog, ittas vezetés, jogosítvány bevonás, közúti baleset, cserbenhagyás, gyorshajtás, büntetőeljárás, gyanúsított képviselet, sértetti képviselet, ügyvéd, Budapest, jogi tanácsadás, Dr. Szomor Zsófia Anna",
   authors: [{ name: "Dr. Szomor Zsófia Anna" }],
   creator: "Dr. Szomor Zsófia Anna",
   publisher: "Dr. Szomor Zsófia Anna Ügyvédi Iroda",
   openGraph: {
-    title: "Dr. Szomor Zsófia Anna | Ügyvédi Iroda – Polgári jog, családjog, ingatlanjog Budapesten",
+    title:
+      "Dr. Szomor Zsófia Anna | Büntetőjog és Közlekedési jog – Ügyvédi Iroda Budapesten",
     description:
-      "Személyre szabott jogi tanácsadás és képviselet Budapesten. Polgári jog, családjog, ingatlanjog, peres és peren kívüli ügyek. Vegye fel velünk a kapcsolatot!",
+      "Büntetőjogi és közlekedési jogi szakterület: ittas vezetés, jogosítvány bevonás, közúti balesetek, büntetőeljárás. Lépjen kapcsolatba irodánkkal bizalommal!",
     url: "https://drszomorzsofia.hu",
     siteName: "Dr. Szomor Zsófia Anna Ügyvédi Iroda",
     images: [
@@ -35,9 +39,10 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dr. Szomor Zsófia Anna | Ügyvédi Iroda – Polgári jog, családjog, ingatlanjog Budapesten",
+    title:
+      "Dr. Szomor Zsófia Anna | Büntetőjog és Közlekedési jog – Ügyvédi Iroda Budapesten",
     description:
-      "Személyre szabott jogi tanácsadás és képviselet Budapesten. Polgári jog, családjog, ingatlanjog, peres és peren kívüli ügyek.",
+      "Személyre szabott büntetőjogi és közlekedési jogi tanácsadás, peres és peren kívüli képviselet Budapesten.",
     images: ["/images/6930F625-6A63-441B-BA7A-65C232D77FF9.jpeg"],
     creator: "@drszomorzsofia",
   },
@@ -62,39 +67,49 @@ export const metadata = {
   },
 };
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const lato = Lato({
+  weight: ["300", "400", "700", "900"],
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-lato",
 });
 
 export default function RootLayout({ children }) {
   return (
     <html lang="hu">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen relative overflow-x-hidden bg-white`}
+        className={`${lato.variable} antialiased min-h-screen relative overflow-x-hidden bg-white`}
       >
-        {/* Purple Glow Top Background */}
+        {/* MagicUI Flickering Grid Background */}
         <div
           aria-hidden="true"
           className="pointer-events-none fixed inset-0 -z-10"
-          style={{
-            background: "#ffffff",
-            backgroundImage: `
-              radial-gradient(
-                circle at top center,
-                rgba(173, 109, 244, 0.5),
-                transparent 70%
-              )
-            `,
-            filter: "blur(80px)",
-            backgroundRepeat: "no-repeat",
-          }}
-        />
+        >
+          {/* Purple Glow Top */}
+          <div
+            className="absolute inset-0 z-0"
+            style={{
+              background: "#ffffff",
+              backgroundImage: `
+                radial-gradient(
+                  circle at top center,
+                  rgba(139, 92, 246, 0.5),
+                  transparent 70%
+                )
+              `,
+              filter: "blur(80px)",
+              backgroundRepeat: "no-repeat",
+            }}
+          />
+          
+          <FlickeringGrid
+            className="z-0 absolute inset-0 size-full"
+            squareSize={4}
+            gridGap={6}
+            color="#6B7280"
+            maxOpacity={0.15}
+            flickerChance={0.05}
+          />
+        </div>
 
         <LanguageProvider>
           <LenisProvider>
@@ -104,6 +119,7 @@ export default function RootLayout({ children }) {
             </main>
             <Footer4 />
             <CookieConsent />
+            <TwentyFirstToolbar />
           </LenisProvider>
         </LanguageProvider>
       </body>

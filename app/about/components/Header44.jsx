@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { Button } from "@/components/ui/button";
 import { AnimatedGroup } from "@/components/ui/animated-group";
 import { useLanguage } from "@/hooks/useLanguage";
+import Link from "next/link";
 
 export function Header44() {
   const { t } = useLanguage();
@@ -46,22 +46,48 @@ export function Header44() {
             </div>
             
             <div>
-              <div className="flex flex-wrap gap-4">
-                <Button 
-                  className="bg-primary hover:bg-primary-dark text-white font-medium px-6 py-3 h-auto rounded-medium transition-all duration-200
-                  onClick={handleLearnMoreClick}"
-                  aria-label="További információ a szolgáltatásokról"
+              <div className="flex flex-col sm:flex-row gap-4">
+                {/* Black button, same style as in Header1.jsx */}
+                <Link href="/services">
+                <button
+                  onClick={handleLearnMoreClick}
+                  className="group relative inline-flex items-center gap-2 px-6 py-3 text-white font-medium rounded-xl overflow-hidden"
+                  aria-label={t('about.learnMoreButtonAria')}
                 >
-                  {t('about.learnMoreButton')}
-                </Button>
-                <Button 
+                
+                  {/* Simple Black Background */}
+                  <div className="absolute inset-0 bg-black rounded-xl" />
+                  <span className="relative z-10 flex items-center gap-2">
+                    {t('about.learnMoreButton')}
+                    <span
+                      className="inline-block transition-transform duration-300 group-hover:translate-x-1"
+                      aria-hidden="true"
+                    >
+                      →
+                    </span>
+                  </span>
+                </button>
+                </Link>
+                {/* White button, same style as in Header1.jsx */}
+                <Link href="/contact">
+                <button
                   onClick={handleContactClick}
-                  variant="outline"
-                  className="border border-primary hover:bg-primary hover:text-white text-primary font-medium px-6 py-3 h-auto rounded-medium transition-all duration-200 bg-transparent"
-                  aria-label="Kapcsolatfelvétel"
+                  className="group relative inline-flex items-center gap-2 px-6 py-3 text-black font-medium rounded-xl overflow-hidden"
+                  aria-label={t('about.contactButtonAria')}
                 >
-                  {t('about.contactButton')}
-                </Button>
+                  {/* Simple White Background */}
+                  <div className="absolute inset-0 bg-white rounded-xl" />
+                  <span className="relative z-10 flex items-center gap-2">
+                    {t('about.contactButton')}
+                    <span
+                      className="inline-block transition-transform duration-300 group-hover:translate-x-1"
+                      aria-hidden="true"
+                    >
+                      ✉
+                    </span>
+                  </span>
+                </button>
+                </Link>
               </div>
             </div>
           </AnimatedGroup>

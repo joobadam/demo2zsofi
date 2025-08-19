@@ -93,7 +93,7 @@ export default function LegalNoticePage() {
 
             <div className="bg-gray-50 rounded-lg p-6 mt-8">
               <p className="text-sm text-gray-500 text-center">
-                Utolsó frissítés: {new Date().toLocaleDateString()}
+                {t('legalNotice.lastUpdated')}: {new Date().toLocaleDateString()}
               </p>
             </div>
           </div>

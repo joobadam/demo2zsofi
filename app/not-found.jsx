@@ -63,9 +63,9 @@ export default function NotFound() {
             
             <button
               onClick={() => window.history.back()}
-              className="inline-flex items-center justify-center px-6 py-3 bg-gray-100 text-gray-700 font-medium rounded-lg hover:bg-gray-200 transition-colors duration-200"
+              className="gradient-button"
+              aria-label={t('notFound.goBack')}
             >
-              <ArrowLeft className="w-5 h-5 mr-2" />
               {t('notFound.goBack')}
             </button>
           </motion.div>

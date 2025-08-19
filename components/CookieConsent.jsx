@@ -89,7 +89,7 @@ const CookieConsent = () => {
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-4">
               <div className="flex items-start gap-3 flex-1">
                 <div className="flex-shrink-0 w-10 h-10 bg-purple-100 rounded-full flex items-center justify-center">
-                  <Cookie className="w-5 h-5 text-purple-600" />
+                  <Cookie className="w-5 h-5 text-primary" />
                 </div>
                 <div className="flex-1">
                   <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -101,7 +101,7 @@ const CookieConsent = () => {
                   <div className="flex items-center gap-4 mt-3">
                     <button
                       onClick={() => setShowSettings(true)}
-                      className="text-purple-600 hover:text-purple-700 text-sm font-medium flex items-center gap-2"
+                      className="text-primary hover:text-purple-700 text-sm font-medium flex items-center gap-2"
                     >
                       <Settings className="w-4 h-4" />
                       {t('cookieConsent.customize')}
@@ -125,13 +125,14 @@ const CookieConsent = () => {
                 </button>
                 <button
                   onClick={handleAcceptSelected}
-                  className="px-6 py-2.5 text-white bg-purple-600 hover:bg-purple-700 rounded-lg font-medium transition-colors"
+                  className="px-6 py-2.5 text-white bg-primary hover:bg-purple-700 rounded-lg font-medium transition-colors"
                 >
                   {t('cookieConsent.acceptSelected')}
                 </button>
                 <button
                   onClick={handleAcceptAll}
-                  className="px-6 py-2.5 text-white bg-primary hover:bg-green-800 rounded-lg font-medium transition-colors"
+                  className="gradient-button"
+                  aria-label={t('cookieConsent.acceptAll')}
                 >
                   {t('cookieConsent.acceptAll')}
                 </button>
@@ -142,7 +143,7 @@ const CookieConsent = () => {
             <div className="space-y-6">
               <div className="flex items-center justify-between">
                 <h3 className="text-xl font-semibold text-gray-900 flex items-center gap-2">
-                  <Settings className="w-5 h-5 text-purple-600" />
+                  <Settings className="w-5 h-5 text-primary" />
                   {t('cookieConsent.settings')}
                 </h3>
                 <button
@@ -231,7 +232,7 @@ const CookieConsent = () => {
                 <div className="flex items-center justify-between p-4 bg-white border border-gray-200 rounded-lg">
                   <div className="flex items-start gap-3">
                     <div className="w-5 h-5 bg-purple-100 rounded-full flex items-center justify-center mt-0.5">
-                      <div className="w-2 h-2 bg-purple-600 rounded-full"></div>
+                      <div className="w-2 h-2 bg-primary rounded-full"></div>
                     </div>
                     <div>
                       <h4 className="font-medium text-gray-900">
@@ -247,7 +248,7 @@ const CookieConsent = () => {
                       type="checkbox"
                       checked={cookiePreferences.preferences}
                       onChange={() => togglePreference('preferences')}
-                      className="w-4 h-4 text-purple-600 bg-gray-100 border-gray-300 rounded focus:ring-purple-500"
+                      className="w-4 h-4 text-primary bg-gray-100 border-gray-300 rounded focus:ring-purple-500"
                     />
                   </div>
                 </div>
@@ -262,7 +263,7 @@ const CookieConsent = () => {
                 </button>
                 <button
                   onClick={handleAcceptSelected}
-                  className="px-6 py-2.5 text-white bg-purple-600 hover:bg-purple-700 rounded-lg font-medium transition-colors"
+                  className="px-6 py-2.5 text-white bg-primary hover:bg-purple-700 rounded-lg font-medium transition-colors"
                 >
                   {t('cookieConsent.savePreferences')}
                 </button>

@@ -33,7 +33,7 @@ export function LanguageProvider({ children }) {
     localStorage.setItem('preferred-language', lang);
   };
 
-  const t = (key) => {
+  const t = (key, params = {}) => {
     const keys = key.split('.');
     let value = translations;
     
@@ -43,6 +43,13 @@ export function LanguageProvider({ children }) {
       } else {
         return key; // Return key if translation not found
       }
+    }
+    
+    // Handle parameterized text
+    if (typeof value === 'string' && params) {
+      return Object.keys(params).reduce((str, param) => {
+        return str.replace(new RegExp(`{${param}}`, 'g'), params[param]);
+      }, value);
     }
     
     return value || key;

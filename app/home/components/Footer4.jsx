@@ -31,7 +31,7 @@ export function Footer4() {
               <button
                 onClick={handleHomeClick}
                 className="flex items-center gap-3 group"
-                aria-label="Vissza a főoldalra"
+                aria-label={t('footer.home')}
               >
                 <img
                   src="/images/logo1.png"
