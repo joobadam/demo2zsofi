@@ -131,7 +131,7 @@ const CookieConsent = () => {
                 </button>
                 <button
                   onClick={handleAcceptAll}
-                  className="gradient-button"
+                  className="bg-black text-white hover:bg-gray-800 rounded-lg font-medium transition-colors px-6 py-2.5"
                   aria-label={t('cookieConsent.acceptAll')}
                 >
                   {t('cookieConsent.acceptAll')}
